@@ -20,5 +20,5 @@ export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
 
 export STORYBOOK_RAILS_HOST="$(cat $ENV_DIR/STORYBOOK_RAILS_HOST)"
 
-yarn install --production=false
+yarn install --mode=development
 yarn run build-storybook

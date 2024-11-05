@@ -14,7 +14,7 @@ then
 fi
 
 echo '{ "root": "storybook-static/" }' > static.json
-echo 'web: npx serve -s storybook-static' > Procfile
+echo 'web: bin/boot' > Procfile
 
 export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
 

@@ -15,7 +15,7 @@ fi
 
 echo '{ "root": "storybook-static/" }' > static.json
 # echo 'web: npx serve -s storybook-static' > Procfile
-echo 'web: npx http-server storybook-static -p 80 --cors' > Procfile
+echo 'web: npx http-server storybook-static -p $PORT --cors' > Procfile
 
 export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
 
